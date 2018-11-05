@@ -3,6 +3,8 @@ const express = require('express');
 const path = require('path');
 const socketIO = require('socket.io');
 
+const {generateMessage} = require('./utils/message');
+
 const publicPath = path.join(__dirname, '../public');
 
 const port = process.env.PORT || 3000;
@@ -24,10 +26,7 @@ io.on('connection', (socket)=>{
     });
 
     // emit event from server to client and pass some data
-    socket.emit('newEmail',{
-        from: 'mike@gmail.com',
-        text: 'Hey. What is going on.'
-    });
+    socket.emit('newMessage',generateMessage('Admin', 'Wellcome!'));
 
     // event listener to crate new email from client
     socket.on('createEmail', (newEmail)=>{
@@ -35,8 +34,6 @@ io.on('connection', (socket)=>{
     });
 
 });
-
-
 
 
 server.listen(port, ()=>{
