@@ -23,6 +23,17 @@ io.on('connection', (socket)=>{
         console.log('User was disconnected')
     });
 
+    // emit event from server to client and pass some data
+    socket.emit('newEmail',{
+        from: 'mike@gmail.com',
+        text: 'Hey. What is going on.'
+    });
+
+    // event listener to crate new email from client
+    socket.on('createEmail', (newEmail)=>{
+        console.log('Create Email: ', newEmail);
+    });
+
 });
 
 
