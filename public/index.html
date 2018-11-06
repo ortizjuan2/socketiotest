@@ -5,16 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
 </head>
 <body>
-    <p>Welcome to the app!</p>
-    <form action="post" id="message-form">
-        <input type="text" placeholder="Message"/>
-        <button type="submit">Send</button>
-    </form>
+    <div class="container-fluid">
+        <h1>SEN COLOMBIA PRICING</h1>
+        <form action="post" id="message-form">
+            <input type="text" placeholder="Message"/>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="row row-title">
+            <div class="col-sm">
+                Name
+            </div>
+            <div class="col-sm">
+                BID
+            </div>
+            <div class="col-sm">
+                OFFER
+            </div>
+            <div class="col-sm">
+                CHG
+            </div>
+        </div>
+        <div class="row row-prices">
+                <div class="col-sm">
+                    MXTT109111
+                </div>
+                <div class="col-sm">
+                    105.99
+                </div>
+                <div class="col-sm">
+                    104.89
+                </div>
+                <div class="col-sm">
+                    0.01
+                </div>
+        </div>
+        <div class="row row-prices-even">
+                <div class="col-sm">
+                    RXTT109112
+                </div>
+                <div class="col-sm">
+                    103.11
+                </div>
+                <div class="col-sm">
+                    100.22
+                </div>
+                <div class="col-sm">
+                    0.87
+                </div>
+        </div>
+        <div class="row row-prices">
+                <div class="col-sm">
+                    RXTT109112
+                </div>
+                <div class="col-sm">
+                    103.11
+                </div>
+                <div class="col-sm">
+                    100.22
+                </div>
+                <div class="col-sm">
+                    0.87
+                </div>
+        </div>
+    </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <script src="/js/index.js"></script>
 </body>
 </html>

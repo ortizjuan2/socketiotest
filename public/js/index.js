@@ -29,4 +29,6 @@ socket.on('newMessage', function (data){
 // dissale form deafault behaviour
 jQuery('#message-form').on('submit', function (e){
     e.preventDefault();
+    $("button").addClass("btn btn-primary");
+    $("button").html('Save');
 });

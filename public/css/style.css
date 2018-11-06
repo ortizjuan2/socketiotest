@@ -1,0 +1,27 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.row-title {
+    background-color: rgba(0,0,0,.5);
+    color: lightgray;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+}
+
+.row-prices {
+    text-align: center;
+}
+
+.row-prices-even  {
+    text-align: center;
+    background-color: lightgrey;
+}
